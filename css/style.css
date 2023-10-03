@@ -45,19 +45,27 @@ body {
   transform: scale(1.15);
   transition: ease-in-out 0.1s;
 }
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px; /* Add margin to separate it from other buttons */
+}
 
+.slider-container label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
 .square-div {
   width: 500px;
   height: 500px;
   background-color: white;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   display: flex;
+  flex-wrap: wrap;
 }
 
-#block {
-  height: 5px;
-  width: 5px;
-}
-#block:hover {
-  background-color: black;
+.grid-cell {
+  flex: 0 0 calc(100% / 16); /* Adjust the 16 based on your grid size */
+  background-color: transparent; /* Default background color */
+  box-sizing: border-box; /* Include borders in the cell dimensions */
 }
