@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/reset.css" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
     <script src="script/script.js" defer></script>
     <title>Etch-A-Sketch</title>
   </head>
@@ -16,9 +16,9 @@
 
     <main class="main">
       <aside class="settings">
-        <button>Solid</button>
-        <button>Rainbow</button>
-        <button>Eraser</button>
+        <button id="blackButton">Solid</button>
+        <button id="rainbowButton">Rainbow</button>
+        <button id="whiteButton">Eraser</button>
         <button id="clearButton">Clear</button>
         <div class="slider-container">
           <label for="gridSize">Grid Size</label>
@@ -36,5 +36,15 @@
 
       <div class="square-div"></div>
     </main>
+    <footer>
+      Copyright ©
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+      migdood
+      <a href="https://github.com/migdood" target="_blank">
+        <i class=""><img src="img/github-icond.png" alt="Github Icon"></i
+      ></a>
+    </footer>
   </body>
 </html>
