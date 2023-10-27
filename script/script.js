@@ -16,18 +16,18 @@ function activeButton(color) {
     eraserButton.classList.add("default");
     rainbowButton.classList.remove("active");
     rainbowButton.classList.add("default");
-    blackButton.classList.add("active");
     blackButton.classList.remove("default");
+    blackButton.classList.add("active");
   } else if (color == "rainbow") {
     eraserButton.classList.remove("active");
     eraserButton.classList.add("default");
-    rainbowButton.classList.add("active");
     rainbowButton.classList.remove("default");
+    rainbowButton.classList.add("active");
     blackButton.classList.remove("active");
     blackButton.classList.add("default");
-  } else if (color == "eraser") {
-    eraserButton.classList.add("active");
+  } else if (color == "white") {
     eraserButton.classList.remove("default");
+    eraserButton.classList.add("active");
     rainbowButton.classList.remove("active");
     rainbowButton.classList.add("default");
     blackButton.classList.remove("active");
