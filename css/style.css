@@ -100,14 +100,3 @@ footer img{
   width: 90px;
   height: auto;
 }
-/* footer img:hover{
-  animation: 1s spin ease;
-}
-@keyframes spin {
-  0%{
-    rotate: 0deg;
-  }
-  100%{
-    rotate: 360deg;
-  }
-} */
