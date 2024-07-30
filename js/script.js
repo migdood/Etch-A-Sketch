@@ -96,3 +96,10 @@ window.onload = () => {
   gridSizeSlider.value = globalGridSize;
   activeButton("black");
 };
+
+// Footer Stuff
+const footerPicture = document.getElementById("footerPicture");
+
+footerPicture.addEventListener("mouseenter", () => {
+  footerPicture.animate({ transform: ["rotate(0deg)", "rotate(360deg)"] }, 550);
+});
